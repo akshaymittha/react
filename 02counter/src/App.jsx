@@ -13,7 +13,10 @@ function App() {
     // console.log("clicked", counter);
     // counter = counter + 1
     if (counter < 20) {
-      setCounter(counter + 1)
+      setCounter(prevCounter => prevCounter + 1) // interview question prevCounter
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
     }
   }
 
